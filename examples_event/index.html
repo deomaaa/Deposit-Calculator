@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css" id="theme">
+  <title>Deposit Calculator</title>
+</head>
+
+<body id="dark">
+  <h1>Deposit Calculator</h1>
+
+  <div class="d-flex">
+    <form name="calculator">
+      <table>
+        <tr>
+          <td>Initial deposit</td>
+          <td>
+            <input name="money" type="number" value="10000" required>
+          </td>
+        </tr>
+        <tr>
+          <td>Deposit term?</td>
+          <td>
+            <select name="months">
+              <option value="3">3 (min)</option>
+              <option value="6">6 (six months)</option>
+              <option value="12" selected>12 (1 year)</option>
+              <option value="18">18 (1.5 years)</option>
+              <option value="24">24 (2 years)</option>
+              <option value="30">30 (2.5 years)</option>
+              <option value="36">36 (3 years)</option>
+              <option value="60">60 (5 years)</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Annual interest rate?</td>
+          <td>
+            <input name="interest" type="number" value="5" required>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <table id="diagram">
+      <tr>
+        <th>It was</th>
+        <th>It will become</th>
+      </tr>
+      <tr>
+        <th id="money-before"></th>
+        <th id="money-after"></th>
+      </tr>
+      <td>
+        <div style="background: tomato;width:40px;height:100px"></div>
+      </td>
+      <td>
+        <div style="background: springgreen;width:40px;height:0" id="height-after"></div>
+      </td>
+    </table>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

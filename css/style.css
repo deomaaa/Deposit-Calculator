@@ -1,0 +1,34 @@
+* {
+  font-family: 'Calibri';
+}
+#dark {
+  background-color: #333;
+  color: white;
+}
+/* Депозитный калькулятор */
+#dark table, td, tr, th {
+  text-align: left;
+  border: none;
+}
+#dark th {
+  background-color: transparent;
+
+}
+h1 {
+  text-align: center;
+}
+#diagram td {
+  vertical-align: bottom;
+  text-align: center;
+  padding: 10px;
+}
+#diagram div {
+  margin: auto;
+}
+#dark .d-flex {
+  height: 200px;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
